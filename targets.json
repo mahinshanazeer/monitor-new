@@ -1,0 +1,27 @@
+[
+  {
+    "labels": {
+      "job": "node-exporter"
+    },
+    "targets": [
+      "34.211.48.138:9100"
+    ]
+  },
+  {
+    "labels": {
+      "job": "prometheus"
+    },
+    "targets": [
+      "34.211.48.138:9090"
+    ]
+  },
+  {
+    "labels": {
+      "job": "alertmanager"
+    },
+    "targets": [
+      "34.211.48.138:9093"
+    ]
+  }
+]
+
