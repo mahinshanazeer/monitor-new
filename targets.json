@@ -4,7 +4,7 @@
       "job": "node-exporter"
     },
     "targets": [
-      "34.211.48.138:9100"
+      "localhost:9100"
     ]
   },
   {
@@ -12,7 +12,7 @@
       "job": "prometheus"
     },
     "targets": [
-      "34.211.48.138:9090"
+      "localhost:9090"
     ]
   },
   {
@@ -20,7 +20,7 @@
       "job": "alertmanager"
     },
     "targets": [
-      "34.211.48.138:9093"
+      "localhost:9093"
     ]
   }
 ]
