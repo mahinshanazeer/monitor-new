@@ -2,7 +2,23 @@
 
 # Update the package list and upgrade the installed packages
 sudo apt-get update -y
-sudo apt-get upgrade -y
+
+#Add Swap Memory of 2GB
+sudo swapon --show
+free -h
+df -h
+sudo fallocate -l 2G /swapfile
+ls -lh /swapfile
+sudo chmod 600 /swapfile
+ls -lh /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
+free -h
+cat /proc/sys/vm/swappiness
+sudo sysctl vm.swappiness=10
+cat /proc/sys/vm/vfs_cache_pressure
+sudo sysctl vm.vfs_cache_pressure=50
 
 # Install essential packages
 sudo apt-get install -y curl net-tools wget unzip
